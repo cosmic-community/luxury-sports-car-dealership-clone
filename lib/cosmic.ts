@@ -27,7 +27,8 @@ export async function getCars(filters?: {
     }
     
     if (filters?.status) {
-      query['metadata.status'] = filters.status;
+      // Fix: Query by the key value for select-dropdown fields
+      query['metadata.status.key'] = filters.status;
     }
     
     if (filters?.featured) {
@@ -148,7 +149,7 @@ export async function getFeaturedCars(): Promise<Car[]> {
   return getCars({ featured: true });
 }
 
-// Get available cars
+// Get available cars (fix: use the key for status filtering)
 export async function getAvailableCars(): Promise<Car[]> {
   return getCars({ status: 'available' });
 }
