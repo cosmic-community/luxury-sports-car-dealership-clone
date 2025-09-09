@@ -12,7 +12,7 @@ module.exports = {
         card: '#111111',
         'card-foreground': '#ffffff',
         primary: {
-          DEFAULT: '#dc2626',
+          DEFAULT: '#16a34a',
           foreground: '#ffffff',
         },
         secondary: {
@@ -20,7 +20,7 @@ module.exports = {
           foreground: '#a1a1aa',
         },
         accent: {
-          DEFAULT: '#dc2626',
+          DEFAULT: '#16a34a',
           foreground: '#ffffff',
         },
         muted: {
